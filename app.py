@@ -105,14 +105,17 @@ elif  option == 'Question Answer (Statistical)' :
     sh = 0
     if st.checkbox('Show data'):
         st.write(table)
-    if st.button('compute'):
-        nlp = non_cachable_task3()
-        res = nlp(table,user_input)
-        #st.write(res)
-        if len(res['answer'])>0:
-            st.write('Answer :', res['answer'])
-        else:
-            st.write("Sorry our model wasn't able to give answer to your question this time, try some other query please")
+
+    st.write("Due to some version issues while deployment --this feature is deprecated.")
+    st.write("Thank you! ")
+    # if st.button('compute'):
+    #     nlp = non_cachable_task3()
+    #     res = nlp(table,user_input)
+    #     #st.write(res)
+    #     if len(res['answer'])>0:
+    #         st.write('Answer :', res['answer'])
+    #     else:
+    #         st.write("Sorry our model wasn't able to give answer to your question this time, try some other query please")
 
 
 # latest_iteration = st.empty()
