@@ -31,7 +31,7 @@ def non_cachable_task1():
 
 @st.cache
 def pr_task2():
-    df = pd.read_csv('data/faqs/faq_covidbert.csv')
+    df = pd.read_csv('faq_covidbert.csv')
     # ques = df["question"][2]
     sentences = df['answer']
     text_task2 = " ''' "
