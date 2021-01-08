@@ -3,7 +3,7 @@ pandas==1.2.0
 numpy==1.17.4
 torch
 torchvision
-torch-scatter
+torch-scatter --global-option build_ext --global-option --compiler=msvc
 transformers==4.1.1
 django_haystack==3.0
 scikit_learn==0.24.0
