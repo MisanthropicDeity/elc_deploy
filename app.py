@@ -8,7 +8,7 @@ import torch
 import pandas as pd
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import os
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 @st.cache
 def pr_task3():
